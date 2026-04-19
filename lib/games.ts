@@ -3,25 +3,33 @@ export type GameMeta = {
   title: string;
   description: string;
   status: "ready" | "coming-soon";
+  color: string;
+  icon: string;
 };
 
 export const games: GameMeta[] = [
   {
     slug: "1024",
     title: "1024",
-    description: "首个演示入口。点击后进入独立游戏目录，后续会补上完整玩法。",
+    description: "滑动数字方块，相同数字合并翻倍，挑战最高分。",
     status: "ready",
+    color: "#f59e0b",
+    icon: "🎯",
   },
   {
     slug: "snake",
     title: "贪吃蛇",
-    description: "后续示例游戏。首版先保留入口位，演示如何持续扩展游戏中心。",
+    description: "控制蛇吃食物不断变长，别撞墙也别咬到自己。",
     status: "coming-soon",
+    color: "#10b981",
+    icon: "🐍",
   },
   {
     slug: "memory-flip",
     title: "记忆翻牌",
-    description: "另一个待接入的小游戏，方便展示游戏列表如何继续增长。",
+    description: "翻开两张卡片，找出所有配对，考验你的记忆力。",
     status: "coming-soon",
+    color: "#8b5cf6",
+    icon: "🃏",
   },
 ];

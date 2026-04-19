@@ -3,7 +3,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Games Center",
-  description: "基于 Next.js 和 Cloudflare Workers 的 Web 游戏中心脚手架。",
+  description: "一些好玩的浏览器小游戏。",
 };
 
 export default function RootLayout({

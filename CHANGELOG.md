@@ -11,3 +11,4 @@
 - 2026-04-20 `minor` 修正 README 部署命令为 `pnpm run deploy`，并将 Wrangler compatibility date 调整到可发布日期
 - 2026-04-20 `major` 新增 GitHub Actions 自动部署工作流，在 `main` 分支 push 后自动 lint 并发布到 `games.cloze.cc`
 - 2026-04-20 `minor` 清理公开仓库前的本地调试残留，新增 `.local` 约定并移除 README 中的本机绝对路径
+- 2026-04-20 `major` 将 1024 从占位页推进到可玩版本，并更新首页与项目说明
