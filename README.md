@@ -73,7 +73,7 @@ zsh -lic 'source ~/.config/zsh/cloudflare.local.zsh; cfcloze on; mise exec node@
 然后执行：
 
 ```bash
-zsh -lic 'source ~/.config/zsh/cloudflare.local.zsh; cfcloze on; mise exec node@24 -- pnpm deploy'
+zsh -lic 'source ~/.config/zsh/cloudflare.local.zsh; cfcloze on; mise exec node@24 -- pnpm run deploy'
 ```
 
 部署脚本会：
@@ -106,7 +106,7 @@ mise exec node@24 -- pnpm dev
 mise exec node@24 -- pnpm build
 mise exec node@24 -- pnpm lint
 mise exec node@24 -- pnpm preview
-mise exec node@24 -- pnpm deploy
+mise exec node@24 -- pnpm run deploy
 mise exec node@24 -- pnpm cf-typegen
 ```
 
