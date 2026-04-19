@@ -6,6 +6,20 @@
   --surface: rgba(255, 255, 255, 0.72);
   --surface-strong: rgba(255, 255, 255, 0.9);
   --border-soft: rgba(148, 163, 184, 0.22);
+  --font-heading:
+    "Avenir Next",
+    "Segoe UI",
+    "PingFang SC",
+    "Hiragino Sans GB",
+    "Noto Sans SC",
+    sans-serif;
+  --font-plex-mono:
+    "IBM Plex Mono",
+    "SFMono-Regular",
+    "SF Mono",
+    "Cascadia Code",
+    "JetBrains Mono",
+    monospace;
 }
 
 @theme inline {
