@@ -1,0 +1,4 @@
+interface:
+  display_name: "Project Doc Maintainer"
+  short_description: "Maintain project docs before commits"
+  default_prompt: "Use this skill to update project context, progress, changelog, and commit prep docs for this repository."

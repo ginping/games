@@ -1,0 +1,8 @@
+#!/bin/sh
+set -eu
+
+if command -v mise >/dev/null 2>&1 && mise exec node@24 -- true >/dev/null 2>&1; then
+  exec mise exec node@24 -- npm run docs:guard -- --staged
+fi
+
+exec npm run docs:guard -- --staged

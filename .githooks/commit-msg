@@ -1,0 +1,8 @@
+#!/bin/sh
+set -eu
+
+if command -v mise >/dev/null 2>&1 && mise exec node@24 -- true >/dev/null 2>&1; then
+  exec mise exec node@24 -- node scripts/git/validate-commit-msg.mjs "$1"
+fi
+
+exec node scripts/git/validate-commit-msg.mjs "$1"

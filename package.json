@@ -1,0 +1,36 @@
+{
+  "name": "games",
+  "version": "0.1.0",
+  "private": true,
+  "packageManager": "pnpm@10.6.5",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "lint": "eslint .",
+    "test:docs": "node --test tests/docs-workflow.test.mjs",
+    "docs:analyze": "node scripts/docs/analyze.mjs",
+    "docs:sync": "node scripts/docs/sync.mjs",
+    "docs:archive": "node scripts/docs/archive.mjs",
+    "docs:guard": "node scripts/docs/guard.mjs",
+    "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
+    "deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy",
+    "cf-typegen": "wrangler types --env-interface CloudflareEnv cloudflare-env.d.ts"
+  },
+  "dependencies": {
+    "next": "16.2.4",
+    "react": "19.2.4",
+    "react-dom": "19.2.4"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@opennextjs/cloudflare": "^1.7.0",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.2.4",
+    "tailwindcss": "^4",
+    "typescript": "^5",
+    "wrangler": "^4.83.0"
+  }
+}
