@@ -44,3 +44,10 @@ cloudflare-env.d.ts
 
 # cloudflare
 /.wrangler/
+
+# local agent scratch space
+/.local/*
+!/.local/README.md
+
+# local browser automation artifacts
+/.playwright-mcp/
