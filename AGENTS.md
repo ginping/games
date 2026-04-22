@@ -113,12 +113,6 @@
 - 如果本轮工作形成了有意义的用户可见变更或工程机制变化，应更新 `CHANGELOG.md`。
 - 如果本轮工作沉淀了稳定约束、目录职责或方案定稿，应更新 `docs/context/*` 或 `docs/decisions/*`，而不是只写在对话里。
 
-### Cloudflare 部署账号
-
-- 涉及 Cloudflare / Wrangler 的实际部署操作时，默认先在当前 shell 显式执行 `source ~/.config/zsh/cloudflare.local.zsh && cfcloze on`，再运行部署命令。
-- 不要假设 Codex、桌面 App 新开的 shell 或其他非 iTerm2 会话已经继承了用户手动执行过的 `cfcloze on` 环境变量。
-- 该项目默认使用 `cloze` 账号部署，避免误发到默认 OAuth 登录态下的其他 Cloudflare account。
-
 ## 游戏中心项目约束
 
 ### 项目定位
